@@ -65,7 +65,7 @@
                         bindings = <
    &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none
    &kp LALT &none &none &kp LG(LEFT) &kp LG(RIGHT) &kp PG_UP   &none &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp LC(TAB)
-   &kp LSHFT &none &none &none &none &kp PG_DN   &none &none &none &kp LC(RBKT) &kp LC(LBKT) &kp LC(LS(TAB)) &none
+   &kp LSHFT &none &none &none &none &kp PG_DN   &none &none &none &kp LC(RBKT) &kp LC(LBKT) &kp TAB &none
                   &kp LGUI &trans &kp SPACE   &kp BSPC &trans &kp RALT
                         >;
                 };
@@ -79,9 +79,9 @@
 //                    | GUI |     | SPC |   | BSPC|     | ALT |
                         display-name = "Symbols";
                         bindings = <
-   &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DOLLAR &kp PERCENT   &kp CARET &kp AMPS &kp ASTERISK &kp LPAR &kp RPAR &kp GRAVE
+   &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PERCENT   &kp CARET &kp AMPS &kp ASTERISK &kp LPAR &kp RPAR &kp GRAVE
    &kp LCTRL &none &none &kp LA(LEFT) &kp LA(RIGHT) &none   &kp BSLH &kp RBKT &kp LBKT &kp EQUAL &kp MINUS &kp TILDE
-   &kp LSHFT &none &none &none &none &none   &kp PIPE &kp RCBR &kp LCBR &kp PLUS &kp UNDERSCORE &none
+   &kp LSHFT &none &none &none &none &none   &kp PIPE &kp RCBR &kp LCBR &kp PLUS &kp UNDER &none
                   &kp LGUI &trans &kp SPACE   &kp BSPC &trans &kp RALT
                         >;
                 };
@@ -96,7 +96,7 @@
                         display-name = "Function";
                         bindings = <
    &kp RESET &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
-   &none &none &none &kp LA(LG(DOWN)) &kp LA(LG(UP)) &none   &kp LC(LA(DEL)) &macro_1 &macro_0 &kp C_NEXT &kp LSHFT &none
+   &none &none &none &kp LG(DOWN) &kp LG(UP) &none   &kp DEL &macro_1 &macro_0 &kp C_NEXT &kp LSHFT &none
    &none &none &none &none &none &kp CAPS   &none &kp C_BRI_DEC &kp C_BRI_INC &none &kp C_PLAY_PAUSE &kp C_VOL_DN
                   &kp LGUI &trans &kp SPACE   &kp BSPC &trans &kp RALT
                         >;
