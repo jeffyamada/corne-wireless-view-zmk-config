@@ -9,6 +9,14 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                adjust {
+                        if-layers = <1 2>;
+                        then-layer = <3>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -56,8 +64,19 @@
                         >;
                 };
 
-                extra_1 {
-                        status = "reserved";
+                adjust_layer {
+// -----------------------------------------------------------------------------------------
+// | RESET| F1  |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11  |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        display-name = "Adjust";
+                        bindings = <
+   &sys_reset &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+   &trans    &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans  &trans
+   &trans    &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans  &trans
+                  &kp LGUI &trans &kp SPACE   &kp RET &trans &kp RALT
+                        >;
                 };
 
                 extra_2 {

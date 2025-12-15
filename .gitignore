@@ -1,0 +1,40 @@
+# Build artifacts
+build/
+*.uf2
+
+# West workspace
+.west/
+
+# ZMK/Zephyr submodules (managed by west)
+modules/
+zephyr/
+zmk/
+
+# Editor directories
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+.python-version
+
+# Temporary files
+*.swp
+*.swo
+*~
+.#*
+
+# Local build scripts (optional - uncomment if you don't want to commit these)
+# build.sh
+# install_zephyr_sdk.sh
+# BUILD_LOCAL.md
+
